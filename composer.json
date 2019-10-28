@@ -1,0 +1,29 @@
+{
+    "name": "minz/package-test",
+    "description": "minz first laravel package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "minz",
+            "email": "zhaomin2719@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Minz\\PackageTest\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Minz\\PackageTest\\TestServiceProvider"
+            ],
+            "aliases": {
+                "Test": "Minz\\PackageTest\\Facede"
+            }
+        }
+    }
+}
